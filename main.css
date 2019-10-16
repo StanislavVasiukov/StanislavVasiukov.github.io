@@ -1,0 +1,251 @@
+*{
+  box-sizing: border-box;  
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+width: 1060px;
+margin: 0 auto;
+}
+
+@font-face {
+	font-family: 'GothaPro';
+	src: url('./fonts/GothaProBol.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothaPro';
+	src: url('./fonts/GothaProLig.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothaPro';
+	src: url('./fonts/GothaProLigIta.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+}
+/* header styles */
+
+.header {
+  min-height: 74 px;
+  background-color: #27273e;
+  padding: 13px 0;
+}
+
+.logotype {
+  display: inline-block;
+  width: 69%;
+  text-align: left;
+  vertical-align: bottom;
+ }
+
+ .lpgptype__picture {
+   max-height;: 100%;
+ }
+
+.contacts {
+  display: inline-block;
+  width: 24%;
+  font-weight: 700;
+  text-align: right;
+}
+
+.contacts__phone { 
+ font-family: 'GothaPro', Open Sans, sans-serif; 
+ font-weight: 700;     
+ color: #ffffff;  
+ font-size: 21px;
+ text-decoration: none;
+}
+
+.contacts__hours {
+  text-decoration: underline;
+  color: #7e2454;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* main styles */
+
+.banner {
+  text-align: right;
+  background-color: #27273e;
+}
+
+.banner__picture {
+  max-height: 100%;
+} 
+
+.general-content {
+padding: 70px 0px;
+width: 100%;
+width: 1060px;
+margin: 0 auto;
+}
+
+.sidebar {
+  display: inline-block;
+  width: 15%;
+}
+
+.main-content {
+  display: inline-block;
+  width: 84%;
+  vertical-align: top;
+}
+
+.nav__item {
+  padding: 0px 0px 35px;
+}
+
+.nav__item:last-child {
+  padding: 0px;
+}
+
+.nav__link {
+  color: #ef508f;
+  font-family: 'GothaPro', Open Sans, sans-serif; 
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #262626;
+}
+
+.nav__link:before {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background: center center / contain no-repeat;
+}
+
+.nav__link--main:before {
+  background-image: url(img/main_icon.png);
+}
+
+.nav__link--feedback:before {
+  background-image: url(img/feed_icon.png);
+}
+
+.nav__link--prices:before {
+  background-image: url(img/wallet_icon.png);
+}
+
+.title {
+  color: #221f1f;
+  font-family: 'GothaPro', Open Sans, sans-serif; 
+  font-weight: 700;
+  font-size: 49px;
+  margin: 0px;
+  text-align: left;
+}
+
+.features__title {
+  margin-bottom: 65px;
+}
+
+.features__block {
+  display: inline-block;
+  margin-right: 67px;
+  width: 28%;
+  text-align: center;
+}
+
+.features__block:last-child {
+  margin-right: 0;
+}
+
+.features__icon{
+  display: inline-block;
+  height: 72px;
+  width: 72px;
+  background-color: #27273e;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* .flower:before {
+  content: "";
+  display: inline-block;
+  background-image: url(img/flower.png);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}  */
+
+.features__pictures{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feature__name {
+  font-family: 'GothaPro', Open Sans, sans-serif; 
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 22px;
+  font-size: 10,78px;  
+  text-transform: uppercase;
+  margin: 34px 0px 28px;
+}
+
+.feature__text {
+  font-family: 'GothaPro', Open Sans, sans-serif; 
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 22px;
+  font-size: 18px;  
+}
+
+.feature__bulletpoint {
+  font-family: 'GothaPro', Open Sans, sans-serif; 
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 22px;
+  text-align: left;
+  position: relative;
+}
+
+.feature__bulletpoint:last-child {
+  margin-bottom: 0px;
+}
+
+.feature__bulletpoint:before {
+  content: "";
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #cc3366;
+  vertical-align: middle;
+  margin-right: 30px;
+} 
